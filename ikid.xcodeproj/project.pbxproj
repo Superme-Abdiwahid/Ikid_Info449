@@ -38,6 +38,12 @@
 		DBECAA4228275F200041891F /* Random_Switch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4128275F200041891F /* Random_Switch.swift */; };
 		DBECAA4428275F9E0041891F /* RandomJoke.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4328275F9E0041891F /* RandomJoke.swift */; };
 		DBECAA46282762720041891F /* Random_JokeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA45282762720041891F /* Random_JokeBack.swift */; };
+		DBECAA4828276E060041891F /* RandomJoke_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4728276E060041891F /* RandomJoke_2.swift */; };
+		DBECAA4C28276F220041891F /* RandomJoke2Front.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4B28276F220041891F /* RandomJoke2Front.swift */; };
+		DBECAA4E28276FD50041891F /* RandomJoke2Back.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4D28276FD50041891F /* RandomJoke2Back.swift */; };
+		DBECAA5028277B3A0041891F /* PunJokesSecondSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA4F28277B3A0041891F /* PunJokesSecondSwitch.swift */; };
+		DBECAA5228277BE80041891F /* PunJokesFront.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA5128277BE80041891F /* PunJokesFront.swift */; };
+		DBECAA5428277BF70041891F /* PunJokesBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBECAA5328277BF70041891F /* PunJokesBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		DBECAA4128275F200041891F /* Random_Switch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_Switch.swift; sourceTree = "<group>"; };
 		DBECAA4328275F9E0041891F /* RandomJoke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJoke.swift; sourceTree = "<group>"; };
 		DBECAA45282762720041891F /* Random_JokeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random_JokeBack.swift; sourceTree = "<group>"; };
+		DBECAA4728276E060041891F /* RandomJoke_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJoke_2.swift; sourceTree = "<group>"; };
+		DBECAA4B28276F220041891F /* RandomJoke2Front.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJoke2Front.swift; sourceTree = "<group>"; };
+		DBECAA4D28276FD50041891F /* RandomJoke2Back.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomJoke2Back.swift; sourceTree = "<group>"; };
+		DBECAA4F28277B3A0041891F /* PunJokesSecondSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokesSecondSwitch.swift; sourceTree = "<group>"; };
+		DBECAA5128277BE80041891F /* PunJokesFront.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokesFront.swift; sourceTree = "<group>"; };
+		DBECAA5328277BF70041891F /* PunJokesBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PunJokesBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +135,6 @@
 		DBECA9C7282577570041891F = {
 			isa = PBXGroup;
 			children = (
-				DBECAA45282762720041891F /* Random_JokeBack.swift */,
 				DBECA9D2282577570041891F /* ikid */,
 				DBECA9E9282577590041891F /* ikidTests */,
 				DBECA9F3282577590041891F /* ikidUITests */,
@@ -144,6 +155,10 @@
 		DBECA9D2282577570041891F /* ikid */ = {
 			isa = PBXGroup;
 			children = (
+				DBECAA45282762720041891F /* Random_JokeBack.swift */,
+				DBECAA4F28277B3A0041891F /* PunJokesSecondSwitch.swift */,
+				DBECAA5128277BE80041891F /* PunJokesFront.swift */,
+				DBECAA5328277BF70041891F /* PunJokesBack.swift */,
 				DBECA9D3282577570041891F /* AppDelegate.swift */,
 				DBECAA3B282749E10041891F /* PunFirstJokeSwitch.swift */,
 				DBECAA3D28274ACA0041891F /* PunFirstJokeFront.swift */,
@@ -160,6 +175,9 @@
 				DBECA9D5282577570041891F /* SceneDelegate.swift */,
 				DBECA9D7282577570041891F /* ViewController.swift */,
 				DBECA9D9282577570041891F /* Main.storyboard */,
+				DBECAA4D28276FD50041891F /* RandomJoke2Back.swift */,
+				DBECAA4B28276F220041891F /* RandomJoke2Front.swift */,
+				DBECAA4728276E060041891F /* RandomJoke_2.swift */,
 				DBECAA4328275F9E0041891F /* RandomJoke.swift */,
 				DBECAA4128275F200041891F /* Random_Switch.swift */,
 				DBECAA2B2826E8DC0041891F /* SecondJokeFront.swift */,
@@ -326,8 +344,12 @@
 			files = (
 				DBECAA0E28257B920041891F /* Knock.swift in Sources */,
 				DBECAA2C2826E8DC0041891F /* SecondJokeFront.swift in Sources */,
+				DBECAA5428277BF70041891F /* PunJokesBack.swift in Sources */,
 				DBECAA262826E74A0041891F /* SecondJoke_Switching.swift in Sources */,
+				DBECAA4C28276F220041891F /* RandomJoke2Front.swift in Sources */,
 				DBECAA2E2826EF830041891F /* ThirdGoodJokeSwitch.swift in Sources */,
+				DBECAA4E28276FD50041891F /* RandomJoke2Back.swift in Sources */,
+				DBECAA5228277BE80041891F /* PunJokesFront.swift in Sources */,
 				DBECA9D8282577570041891F /* ViewController.swift in Sources */,
 				DBECAA4428275F9E0041891F /* RandomJoke.swift in Sources */,
 				DBECA9D4282577570041891F /* AppDelegate.swift in Sources */,
@@ -342,6 +364,8 @@
 				DBECAA10282583130041891F /* SwitchingViewController.swift in Sources */,
 				DBECAA222826E4F60041891F /* SecondJokeGood.swift in Sources */,
 				DBECA9D6282577570041891F /* SceneDelegate.swift in Sources */,
+				DBECAA4828276E060041891F /* RandomJoke_2.swift in Sources */,
+				DBECAA5028277B3A0041891F /* PunJokesSecondSwitch.swift in Sources */,
 				DBECAA0C28257B810041891F /* Pun.swift in Sources */,
 				DBECAA3E28274ACA0041891F /* PunFirstJokeFront.swift in Sources */,
 				DBECAA3C282749E10041891F /* PunFirstJokeSwitch.swift in Sources */,
