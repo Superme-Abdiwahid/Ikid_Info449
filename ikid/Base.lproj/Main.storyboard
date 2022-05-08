@@ -663,9 +663,51 @@
             </objects>
             <point key="canvasLocation" x="1398" y="1653"/>
         </scene>
+        <!--Random Joke Back-->
+        <scene sceneID="ewe-Ke-TEh">
+            <objects>
+                <viewController storyboardIdentifier="Random_Back" id="wXb-ib-lYA" customClass="Random_JokeBack" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJ2-Yd-49b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oz4-JN-TmZ" customClass="Good">
+                                <rect key="frame" x="87.5" y="262.5" width="200.5" height="142.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry I am a little too short" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9G-1v-BuD">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsG-KD-rgg">
+                                        <rect key="frame" x="0.0" y="50.5" width="200.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next Joke"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A5m-0R-pto">
+                                        <rect key="frame" x="0.0" y="111.5" width="200.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="HomePage"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="POH-Qs-gFS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oz4-JN-TmZ" firstAttribute="centerX" secondItem="PJ2-Yd-49b" secondAttribute="centerX" id="B4V-TY-vxr"/>
+                            <constraint firstItem="oz4-JN-TmZ" firstAttribute="centerY" secondItem="PJ2-Yd-49b" secondAttribute="centerY" id="Ud8-35-Qds"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7y-9U-xGv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="2193"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IPV-RY-zaS"/>
+        <segue reference="jkQ-EF-8Vw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

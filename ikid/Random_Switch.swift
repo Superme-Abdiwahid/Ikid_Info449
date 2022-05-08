@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 class Random_Switch: UIViewController{
 
-        var firstViewController : FirstViewController! = nil
-        var secondViewController : SecondViewController! = nil
+        var firstViewController : RandomJoke! = nil
+        var secondViewController : Random_JokeBack! = nil
 
         @IBAction func switchViews(_ sender: Any) {
             secondBuilder()
@@ -58,16 +58,16 @@ class Random_Switch: UIViewController{
             if firstViewController == nil {
                 firstViewController =
                     storyboard?
-                        .instantiateViewController(withIdentifier: "First")
-                    as! FirstViewController
+                        .instantiateViewController(withIdentifier: "Random_1")
+                    as! RandomJoke
             }
         }
         fileprivate func secondBuilder() {
             if secondViewController == nil {
                 secondViewController =
                     storyboard?
-                        .instantiateViewController(withIdentifier: "Second")
-                    as! SecondViewController
+                        .instantiateViewController(withIdentifier: "Random_Back")
+                    as! Random_JokeBack
             }
         }
         
