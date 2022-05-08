@@ -1,24 +1,675 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tc1-CF-LRC">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Good_Jokes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController interfaceStyle="light" id="BYZ-38-t0r" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hHk-uq-gXI" customClass="Good">
+                                <rect key="frame" x="50" y="283" width="275.5" height="81.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Good Jokes Get started" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dni-sg-tGF">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0at-KX-hnx">
+                                        <rect key="frame" x="0.0" y="50.5" width="275.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <segue destination="Nvb-Sq-UEw" kind="show" id="s0m-Xn-VeZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hHk-uq-gXI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3h9-VZ-vI4"/>
+                            <constraint firstItem="hHk-uq-gXI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CSI-zr-7vR"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Good_Jokes" id="vgx-H1-kcK"/>
+                    <navigationItem key="navigationItem" id="epw-E6-tSM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="5.5999999999999996" y="909.89505247376314"/>
+        </scene>
+        <!--Pun_Jokes-->
+        <scene sceneID="MkU-RQ-J6z">
+            <objects>
+                <viewController id="Ll1-uj-2is" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aRn-3g-9Az">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Cwh-ks-Wrc">
+                                <rect key="frame" x="14.5" y="271" width="346.5" height="105"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to PUN JOKES GET STARTED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m19-LS-Qfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="346.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvv-42-KEN">
+                                        <rect key="frame" x="0.0" y="74" width="346.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <segue destination="ATc-GU-0Mp" kind="show" id="EP6-GZ-KlE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lr7-PM-1oe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cwh-ks-Wrc" firstAttribute="centerY" secondItem="aRn-3g-9Az" secondAttribute="centerY" id="LAE-gm-xaK"/>
+                            <constraint firstItem="Cwh-ks-Wrc" firstAttribute="centerX" secondItem="aRn-3g-9Az" secondAttribute="centerX" id="fbK-Y7-de7"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pun_Jokes" id="CmT-Jh-iGB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMX-UK-bSF" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="718" y="910"/>
+        </scene>
+        <!--Knock_Knock Jokes-->
+        <scene sceneID="rfn-C7-dre">
+            <objects>
+                <viewController id="1Nq-7T-esh" customClass="ViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZOw-7m-rzl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="45" translatesAutoresizingMaskIntoConstraints="NO" id="g9N-8R-z5c">
+                                <rect key="frame" x="127" y="273.5" width="121.5" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Knock_Knock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bA8-1N-sbz">
+                                        <rect key="frame" x="0.0" y="0.0" width="121.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QFD-eb-8tG">
+                                        <rect key="frame" x="0.0" y="69" width="121.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next"/>
+                                        <connections>
+                                            <segue destination="nhb-QU-qEM" kind="show" id="QLd-wJ-5Nv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VAT-D7-nKA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g9N-8R-z5c" firstAttribute="centerY" secondItem="ZOw-7m-rzl" secondAttribute="centerY" id="P8d-WA-Pmo"/>
+                            <constraint firstItem="g9N-8R-z5c" firstAttribute="centerX" secondItem="ZOw-7m-rzl" secondAttribute="centerX" id="Pz8-Mn-BHH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock_Knock Jokes" id="BFM-CK-lQj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sZi-lU-3qP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="931"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BPi-Fx-iw3">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tc1-CF-LRC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="93a-CH-Sws"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eUu-wL-WRd">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="5FG-8x-4KM"/>
+                        <segue destination="Ll1-uj-2is" kind="relationship" relationship="viewControllers" id="F0X-rn-9GX"/>
+                        <segue destination="1Nq-7T-esh" kind="relationship" relationship="viewControllers" id="ViI-np-1TQ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9NS-qT-00Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-13.043478260869566" y="37.5"/>
+        </scene>
+        <!--Knock_Knock Jokes-->
+        <scene sceneID="qcR-F1-zn5">
+            <objects>
+                <viewController storyboardIdentifier="Random_1" id="kU4-30-nPI" customClass="RandomJoke" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lM1-5P-oUo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random Joke" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aZ-Oe-RLJ">
+                                <rect key="frame" x="102" y="287" width="120" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tUI-ih-JsT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Knock_Knock Jokes" id="uMf-Q1-obP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Lh-DS-atK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2078" y="1504"/>
+        </scene>
+        <!--Switching View Controller-->
+        <scene sceneID="bOd-Ka-d2v">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EDf-LN-oE4" sceneMemberID="firstResponder"/>
+                <viewController id="Nvb-Sq-UEw" customClass="SwitchingViewController" customModule="Flipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="99C-bA-dmr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iHr-a2-N3k">
+                                <rect key="frame" x="20" y="569" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch" id="QpH-U3-Zd5">
+                                        <connections>
+                                            <action selector="switchViews:" destination="Nvb-Sq-UEw" id="kDO-iH-ob1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NVG-Wh-GXQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YCZ-Sw-hK2"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="6" y="1696"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="ylA-xu-CJn">
+            <objects>
+                <viewController storyboardIdentifier="First" id="Q7A-Pe-6Se" customClass="FirstViewController" customModule="Flipper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byf-1p-xaw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="MQe-q8-QLT" customClass="Good">
+                                <rect key="frame" x="66" y="298" width="243.5" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did the midget say when I " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vy3-u5-RIG">
+                                        <rect key="frame" x="0.0" y="0.0" width="243.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked for a dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL6-3L-X8Y">
+                                        <rect key="frame" x="0.0" y="50.5" width="243.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jld-2Q-UxB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MQe-q8-QLT" firstAttribute="centerY" secondItem="byf-1p-xaw" secondAttribute="centerY" id="bEI-4i-DBQ"/>
+                            <constraint firstItem="MQe-q8-QLT" firstAttribute="centerX" secondItem="byf-1p-xaw" secondAttribute="centerX" id="fe6-U8-bpT"/>
+                            <constraint firstItem="MQe-q8-QLT" firstAttribute="centerX" secondItem="byf-1p-xaw" secondAttribute="centerX" id="lWs-qI-2PT"/>
+                            <constraint firstItem="MQe-q8-QLT" firstAttribute="centerY" secondItem="byf-1p-xaw" secondAttribute="centerY" id="sD8-vB-hoK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SYt-Ot-WKb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="975"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="zHt-Pj-QaM">
+            <objects>
+                <viewController storyboardIdentifier="Second" id="OZq-rA-c69" customClass="SecondViewController" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ix2-8A-bUi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-TK-vur" customClass="Good">
+                                <rect key="frame" x="87.5" y="262.5" width="200.5" height="142.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry I am a little too short" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Js-uc-7Dh">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2DF-Mh-mPg">
+                                        <rect key="frame" x="0.0" y="50.5" width="200.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next Joke"/>
+                                        <connections>
+                                            <segue destination="RN3-xn-XP6" kind="show" id="5pX-zT-3Ly"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoU-Ng-Nmk">
+                                        <rect key="frame" x="0.0" y="111.5" width="200.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="HomePage"/>
+                                        <connections>
+                                            <segue destination="Tc1-CF-LRC" kind="show" id="jkQ-EF-8Vw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Js-2u-glI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yUr-TK-vur" firstAttribute="centerY" secondItem="Ix2-8A-bUi" secondAttribute="centerY" id="S0W-DS-IYl"/>
+                            <constraint firstItem="yUr-TK-vur" firstAttribute="centerX" secondItem="Ix2-8A-bUi" secondAttribute="centerX" id="nvR-hy-Qij"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYb-Xq-ACP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-718" y="1685"/>
+        </scene>
+        <!--Second Joke More-->
+        <scene sceneID="wSA-6k-HiB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQD-zQ-VWK" sceneMemberID="firstResponder"/>
+                <viewController id="RN3-xn-XP6" customClass="SecondJokeMore" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oDQ-bb-LE1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Np-9b-Lqv">
+                                <rect key="frame" x="20" y="569" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch" id="doo-yw-di8">
+                                        <connections>
+                                            <action selector="switchViews:" destination="RN3-xn-XP6" id="0gd-qe-b5E"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4fd-0p-2zM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="U5M-So-wJG"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="86" y="2517"/>
+        </scene>
+        <!--Second Joke Front-->
+        <scene sceneID="UBd-Sv-trO">
+            <objects>
+                <viewController storyboardIdentifier="Good_Joke2" id="grm-r1-uYj" customClass="SecondJokeFront" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="83A-gn-6lt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Wdx-lg-ukB" customClass="Good">
+                                <rect key="frame" x="70.5" y="298" width="234.5" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Why did the soccer player take" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="POR-Ny-FNs">
+                                        <rect key="frame" x="0.0" y="0.0" width="234.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="so long to eat dinner?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXT-LN-TKz">
+                                        <rect key="frame" x="0.0" y="50.5" width="234.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nH0-cZ-77I"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wdx-lg-ukB" firstAttribute="centerX" secondItem="83A-gn-6lt" secondAttribute="centerX" id="1DM-i7-p4V"/>
+                            <constraint firstItem="Wdx-lg-ukB" firstAttribute="centerX" secondItem="83A-gn-6lt" secondAttribute="centerX" id="GFc-yo-CDR"/>
+                            <constraint firstItem="Wdx-lg-ukB" firstAttribute="centerY" secondItem="83A-gn-6lt" secondAttribute="centerY" id="OJp-DR-7ua"/>
+                            <constraint firstItem="Wdx-lg-ukB" firstAttribute="centerY" secondItem="83A-gn-6lt" secondAttribute="centerY" id="UhD-qc-PD4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YuO-6g-VdG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-719" y="2413"/>
+        </scene>
+        <!--Second Joke Good Back-->
+        <scene sceneID="0OF-Gr-YTW">
+            <objects>
+                <viewController storyboardIdentifier="SecondJokeBack" id="fYR-Ld-YCF" customClass="SecondJokeGoodBack" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7c-ye-SS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="mzp-XI-VL8" customClass="Good">
+                                <rect key="frame" x="34.5" y="257.5" width="306.5" height="152.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="He thought he couldnt use his hands 😂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hr5-Ht-VrW">
+                                        <rect key="frame" x="0.0" y="0.0" width="306.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9b-Od-HII">
+                                        <rect key="frame" x="0.0" y="55.5" width="306.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next Joke"/>
+                                        <connections>
+                                            <segue destination="f3n-ch-Xg1" kind="show" id="BYZ-T1-Miw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EA-C4-Yj0">
+                                        <rect key="frame" x="0.0" y="121.5" width="306.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="HomePage"/>
+                                        <connections>
+                                            <segue destination="Tc1-CF-LRC" kind="show" id="gjK-4P-Zes"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bbX-WC-rX8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mzp-XI-VL8" firstAttribute="centerX" secondItem="A7c-ye-SS3" secondAttribute="centerX" id="MfZ-qX-KTC"/>
+                            <constraint firstItem="mzp-XI-VL8" firstAttribute="centerY" secondItem="A7c-ye-SS3" secondAttribute="centerY" id="ak2-cA-48e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k2i-8Y-0VD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-740" y="3072"/>
+        </scene>
+        <!--Pun First Joke Switch-->
+        <scene sceneID="SgA-XC-Lcs">
+            <objects>
+                <viewController id="ATc-GU-0Mp" customClass="PunFirstJokeSwitch" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G4F-E0-1ld">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f9J-Kj-rI5">
+                                <rect key="frame" x="20" y="569" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch" id="4LR-Pa-yZF">
+                                        <connections>
+                                            <action selector="switchViews:" destination="ATc-GU-0Mp" id="IEL-RB-V5F"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vqd-x5-Lok"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dcD-ky-UDG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXy-5b-vA3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717.60000000000002" y="1607.9460269865069"/>
+        </scene>
+        <!--Third Good Joke Switch-->
+        <scene sceneID="A6d-1K-reR">
+            <objects>
+                <viewController id="f3n-ch-Xg1" customClass="ThirdGoodJokeSwitch" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4kQ-Lt-gBB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r3q-gD-1NZ">
+                                <rect key="frame" x="20" y="569" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch" id="78n-tm-z0G">
+                                        <connections>
+                                            <action selector="switchViews:" destination="f3n-ch-Xg1" id="yOb-c5-Ohg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RXj-hH-QoI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fFw-Wa-ekg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LCU-5r-6iy" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="3199"/>
+        </scene>
+        <!--Third Joke Front-->
+        <scene sceneID="jT5-I6-MrG">
+            <objects>
+                <viewController storyboardIdentifier="Good_Joke3" id="0EP-Va-8CH" customClass="ThirdJokeFront" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uW6-9w-cDT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="KZs-Zg-leg" customClass="Good">
+                                <rect key="frame" x="116.5" y="298" width="142.5" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What did the clock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG6-Tc-CLu">
+                                        <rect key="frame" x="0.0" y="0.0" width="142.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="say to the watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T0Z-NX-qhM">
+                                        <rect key="frame" x="0.0" y="50.5" width="142.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xv1-aO-XG2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZs-Zg-leg" firstAttribute="centerX" secondItem="uW6-9w-cDT" secondAttribute="centerX" id="37x-VL-olx"/>
+                            <constraint firstItem="KZs-Zg-leg" firstAttribute="centerY" secondItem="uW6-9w-cDT" secondAttribute="centerY" id="BP2-vw-DLa"/>
+                            <constraint firstItem="KZs-Zg-leg" firstAttribute="centerX" secondItem="uW6-9w-cDT" secondAttribute="centerX" id="eq2-jp-R7F"/>
+                            <constraint firstItem="KZs-Zg-leg" firstAttribute="centerY" secondItem="uW6-9w-cDT" secondAttribute="centerY" id="wQR-Ej-cd5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYK-qT-WiN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="3901"/>
+        </scene>
+        <!--Third Joke Back-->
+        <scene sceneID="cU7-xH-6En">
+            <objects>
+                <viewController storyboardIdentifier="ThirdJokeBack" id="hst-0h-JhL" customClass="ThirdJokeBack" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PFH-fO-CDe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-B6-uiP" customClass="Good">
+                                <rect key="frame" x="110.5" y="290.5" width="154.5" height="86.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOUR you doing 😂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R96-T3-CJ8">
+                                        <rect key="frame" x="0.0" y="0.0" width="154.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-k2-Nvd">
+                                        <rect key="frame" x="0.0" y="55.5" width="154.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="HomePage"/>
+                                        <connections>
+                                            <segue destination="Tc1-CF-LRC" kind="show" id="IPV-RY-zaS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Oer-ZL-Flj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rhd-B6-uiP" firstAttribute="centerX" secondItem="PFH-fO-CDe" secondAttribute="centerX" id="AT7-iD-E04"/>
+                            <constraint firstItem="rhd-B6-uiP" firstAttribute="centerY" secondItem="PFH-fO-CDe" secondAttribute="centerY" id="Qy4-M8-ylN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="scx-UN-26h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="3923"/>
+        </scene>
+        <!--Pun First Joke Front-->
+        <scene sceneID="DP7-3N-S6q">
+            <objects>
+                <viewController storyboardIdentifier="Punned_First" id="XlC-hk-FTk" customClass="PunFirstJokeFront" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wtf-jI-J6q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="DKF-RA-ciq" customClass="Good">
+                                <rect key="frame" x="121.5" y="298" width="132.5" height="71"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PUNNED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsZ-ge-3SX">
+                                        <rect key="frame" x="0.0" y="0.0" width="132.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asked for a dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRd-qJ-IrI">
+                                        <rect key="frame" x="0.0" y="50.5" width="132.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hrY-Wq-zw6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DKF-RA-ciq" firstAttribute="centerY" secondItem="Wtf-jI-J6q" secondAttribute="centerY" id="3an-Cb-A1u"/>
+                            <constraint firstItem="DKF-RA-ciq" firstAttribute="centerY" secondItem="Wtf-jI-J6q" secondAttribute="centerY" id="3ej-4S-BOj"/>
+                            <constraint firstItem="DKF-RA-ciq" firstAttribute="centerX" secondItem="Wtf-jI-J6q" secondAttribute="centerX" id="DxX-Mq-Xg7"/>
+                            <constraint firstItem="DKF-RA-ciq" firstAttribute="centerX" secondItem="Wtf-jI-J6q" secondAttribute="centerX" id="mFD-Rg-WiB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9gE-Oe-Igp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738" y="2252"/>
+        </scene>
+        <!--Pun First Joke Back-->
+        <scene sceneID="5WN-G5-FCo">
+            <objects>
+                <viewController storyboardIdentifier="Punned_Back" id="hS2-T2-VHN" customClass="PunFirstJokeBack" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ivt-5R-rgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="vh1-EE-TGw" customClass="Good">
+                                <rect key="frame" x="137.5" y="262.5" width="100.5" height="142.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back Punned" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1G-iZ-u4O">
+                                        <rect key="frame" x="0.0" y="0.0" width="100.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhE-Id-p1K">
+                                        <rect key="frame" x="0.0" y="50.5" width="100.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Next Joke"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ioh-om-LQf">
+                                        <rect key="frame" x="0.0" y="111.5" width="100.5" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="HomePage"/>
+                                        <connections>
+                                            <segue destination="Tc1-CF-LRC" kind="show" id="rmc-ly-eah"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K0R-sz-geH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vh1-EE-TGw" firstAttribute="centerY" secondItem="ivt-5R-rgG" secondAttribute="centerY" id="6Tr-oQ-1hc"/>
+                            <constraint firstItem="vh1-EE-TGw" firstAttribute="centerX" secondItem="ivt-5R-rgG" secondAttribute="centerX" id="FYv-mS-Ly7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGs-EG-eVf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770" y="2928"/>
+        </scene>
+        <!--Random Switch-->
+        <scene sceneID="s1D-vm-WP6">
+            <objects>
+                <viewController id="nhb-QU-qEM" customClass="Random_Switch" customModule="ikid" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GaI-GQ-V21">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4C-Ke-rmG">
+                                <rect key="frame" x="20" y="569" width="335" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Switch" id="QPi-Li-bpf">
+                                        <connections>
+                                            <action selector="switchViews:" destination="nhb-QU-qEM" id="dQG-Hc-O6y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZLM-5f-gbu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fAE-y9-zQP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGh-a4-96N" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="1653"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="IPV-RY-zaS"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
